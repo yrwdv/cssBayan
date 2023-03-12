@@ -11,7 +11,7 @@ body {
 
 .page-title {
     margin: 0 auto 0.8rem auto;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -34,7 +34,7 @@ body {
     align-items: center;
     width: 100%;
     margin: 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .accordion-icon {
@@ -65,7 +65,7 @@ body {
 
 .accordion-content img {
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 1rem auto;
     max-width: 60%;
     width: auto;
     height: 100%;
@@ -83,15 +83,23 @@ body {
 
 /* Tablet */
 @media (min-width: 820px) {
-    body {
-        font-size: 24px;
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .accordion-title {
+        font-size: 1.4rem;
     }
 }
 
 /* Desktop */
 @media (min-width: 920px) {
-    body {
-        font-size: 32px;
+    .page-title {
+        font-size: 2.3rem;
+    }
+
+    .accordion-title {
+        font-size: 1.5rem;
     }
 
     .accordion-icon {
