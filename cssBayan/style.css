@@ -39,14 +39,17 @@ body {
 
 .accordion-icon {
     display: block;
-    background: url(img/collapsed-btn.png) no-repeat center / contain;
     width: 1.25rem;
     height: 1.25rem;
-    transition: all 0.2s ease;
+    background-image: url(img/collapsed-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .accordion-radio:checked ~ .accordion-title > .accordion-icon {
-    background: url(img/expanded-btn.png) no-repeat center / contain;
+    background-image: url(img/expanded-btn.png);
 }
 
 .accordion-content {
@@ -65,11 +68,11 @@ body {
 
 .accordion-content img {
     display: block;
-    margin: 0 auto 1rem auto;
-    max-width: 60%;
     width: auto;
+    max-width: 60%;
     height: 100%;
     max-height: 15rem;
+    margin: 0 auto 1rem auto;
     object-fit: contain;
 }
 
@@ -101,15 +104,22 @@ body {
     .accordion-title {
         font-size: 1.5rem;
     }
+}
 
+/* Hover support devices */
+@media (hover: hover) {
     .accordion-icon {
         opacity: 0;
         transition: opacity 0.5s ease;
-    }
+    }   
 
     .accordion-container:hover .accordion-icon {
         opacity: 1;
-    }    
+    } 
+    
+    .accordion-item:hover .accordion-content {
+        max-height: 16rem;
+    }
 
     .accordion-title {
         color: #2222ff;
@@ -119,9 +129,5 @@ body {
     .accordion-container:hover .accordion-title,
     .accordion-radio:checked ~ .accordion-title  {
         color: #131313;
-    }
-    
-    .accordion-item:hover .accordion-content {
-        max-height: 16rem;
     }
 }
