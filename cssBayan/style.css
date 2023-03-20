@@ -3,12 +3,6 @@ body {
     line-height: 1.3;
 }
 
-.main-header {
-    color: red;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
 .accordion-container {
     width: 90%;
     max-width: 40rem;
@@ -92,10 +86,6 @@ body {
 
 /* Tablet */
 @media (min-width: 768px) {
-    .main-header {
-        font-size: 0.85rem;
-    }
-
     .page-title {
         font-size: 2rem;
     }
@@ -107,10 +97,6 @@ body {
 
 /* Desktop */
 @media (min-width: 1200px) {
-    .main-header {
-        font-size: 0.9rem;
-    }
-
     .page-title {
         font-size: 2.3rem;
     }
